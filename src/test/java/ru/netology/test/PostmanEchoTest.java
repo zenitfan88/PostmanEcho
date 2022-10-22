@@ -23,7 +23,7 @@ public class PostmanEchoTest {
                 .body("headers.content-type", equalTo("text/plain; charset=UTF-8"))
                 .body ("headers.content-length",equalTo("9"))
                 .body("data", equalTo("some data"))
-                .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11.0.14.1)"))
+
                 .body(matchesJsonSchemaInClasspath("postman.schema.json"))
         ;
     }
