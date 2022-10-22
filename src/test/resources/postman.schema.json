@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "required": [
+    "args",
+    "files",
+    "form",
+    "data",
+    "headers"
+  ],
+  "properties": {
+    "args": {
+      "type": "object"
+    },
+    "files": {
+      "type": "object"
+    },
+    "form": {
+      "type": "object"
+    },
+    "data": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 99
+    },
+    "headers": {
+      "type": "object"
+    }
+  }
+}
