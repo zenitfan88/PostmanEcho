@@ -21,9 +21,8 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .body("headers.content-type", equalTo("text/plain; charset=UTF-8"))
-                .body ("headers.content-length",equalTo("9"))
+                .body("headers.content-length", equalTo("9"))
                 .body("data", equalTo("some data"))
-
                 .body(matchesJsonSchemaInClasspath("postman.schema.json"))
         ;
     }
